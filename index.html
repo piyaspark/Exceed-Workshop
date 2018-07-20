@@ -10,43 +10,73 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <title>PALM FACTORY</title>
     <style>
-            .center {
-                text-align: center;
-            }
-        </style>
-    
+        .center {
+            text-align: center;
+        }
+    </style>
+
 
 </head>
 
 <body>
-    <div class="center">
-        <h1>SMART Home</h1>
+    <div class="cb">
+        <h4 class="image">PALM FACTORY
+            <img src="https://png.icons8.com/metro/26/000000/palm-tree.png" style="margin-left: 5pt">
+        </h4>
+
     </div>
+    <div class="bg">
+        <div class="center">
+        <h1 class="image">SMART Home</h1>
+        <h3>Feel at ease with us</h3>
+        </div>
+    </div>
+    <hr>
     <div class='container fluid content'>
-        <div class='row'>
-            <div class="col-6 center">
-                <img src="./pictures/alarm.png">
-                <h2>Buzzer</h2>
+        <div class='row '>
+            <div class="col-6 center border-right">
+                <img src="./pictures/alarm.png" class="image">
+                <br>
+              <div class = "nm">
+                    <h4 style ="margin-right: 10px">Buzzer</h4>
+                    <input type="checkbox" checked data-toggle="toggle">
+              </div>
                 
-                <img src="./pictures/door.png">
-                <h2>Door</h2>
+
             </div>
-            <hr>
             <div class="col-6 center">
-                <img src="./pictures/LED.png">
-                <h2>Light</h2>
-
-                <img src="./pictures/AC.png">
-                <h2>Air Conditoner</h2>
+                <img src="./pictures/door.png" class="image">
+                <br>
+                <div class = "nm">
+                        <h4 style="margin-right: 10px">Door</h4>
+                        <input type="checkbox" checked data-toggle="toggle">
+                  </div>
             </div>
-
         </div>
         <hr>
         <div class='row'>
-
+            <div class="col-6 center">
+                <img src="./pictures/LED.png" class="image">
+                <br>
+                <div class = "nm">
+                        <h4 style="margin-right: 10px">Light</h4>
+                        <input type="checkbox" checked data-toggle="toggle">
+                  </div>
+            </div>
+            <div class="col-6 center border-left">
+                <img src="./pictures/AC.png" class="image">
+                <br>
+                <div class = "nm">
+                        <h4 style="margin-right: 10px">Air Condition</h4>
+                        <input type="checkbox" checked data-toggle="toggle">
+                  </div>
+            </div>
         </div>
+        <hr>
+    </div>
     </div>
 
 
@@ -116,6 +146,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
     <script src="./app.js"></script>
 </body>
 
