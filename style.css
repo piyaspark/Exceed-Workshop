@@ -1,3 +1,14 @@
+.toggle-off {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.toggle.off {
+    border-color: rgba(0, 0, 0, .25);
+}
+
+.toggle-handle {
+    background-color: white;
+    border: thin rgba(0, 0, 0, .25) solid;
+}
 
 .page {
     height: 600px;
@@ -10,6 +21,9 @@
 }
 .image{
     padding: 20px
+}
+.image2{
+    padding: 80px
 }
 .cb{
     border-bottom: solid 1px blueviolet;  
@@ -26,4 +40,18 @@ justify-content: center;
 
 .center {
     padding: 130px; 
+}
+.a{
+   
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 1.50px;   
+}
+.b{
+    font-size: 115px;
+}
+.c{
+    font-size: 55px;
+}
+.ta{
+    text-align: center;
 }
