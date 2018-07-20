@@ -1,0 +1,10 @@
+
+.page {
+    height: 600px;
+    margin: auto;
+    overflow: auto;
+    background-color: red
+}
+.long{
+    width: 600px;
+}
