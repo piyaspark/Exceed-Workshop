@@ -22,7 +22,8 @@
 </head>
 
 <body>
-
+    <h1>test</h1>
+    <button id="test">test on server</button>
     <div class="cb">
         <h4 class="image">PALM FACTORY
             <img src="https://png.icons8.com/metro/26/000000/palm-tree.png" style="margin-left: 5pt">
@@ -45,7 +46,7 @@
 
                 <div class="nm">
                     <h4 style="margin-right: 15px">Buzzer</h4>
-                    <input type="checkbox" checked data-toggle="toggle">
+                    <input type="checkbox" checked data-toggle="toggle" id="buzzer-toggle">
                 </div>
 
 
@@ -57,7 +58,7 @@
 
                 <div class="nm">
                     <h4 style="margin-right: 15px">Door</h4>
-                    <input type="checkbox" checked data-toggle="toggle">
+                    <input type="checkbox" checked data-toggle="toggle" id="door-toggle">
                 </div>
 
             </div>
@@ -70,7 +71,7 @@
 
                 <div class="nm">
                     <h4 style="margin-right: 15px">Light</h4>
-                    <input type="checkbox" checked data-toggle="toggle">
+                    <input type="checkbox" checked data-toggle="toggle" id="led-toggle">
                 </div>
 
             </div>
@@ -80,7 +81,7 @@
 
                 <div class="nm">
                     <h4 style="margin-right: 15px">Air Condition</h4>
-                    <input type="checkbox" checked data-toggle="toggle">
+                    <input type="checkbox" checked data-toggle="toggle" id="air-toggle">
 
                 </div>
             </div>
@@ -89,15 +90,15 @@
         <div class="row">
             <div class="col-4 ta image2 border-right">
                 <h2>Temperature</h2>
-                <h3>23°C</h3>
+                <h3 id="temp-status">23</h3><h3>°C</h3>
             </div>
             <div class="col-4 ta image2">
                 <h2>Humidity</h2>
-                <h3>5000</h3>
+                <h3 id="humid-status">5000</h3>
             </div>
             <div class="col-4 ta image2 border-left">
                 <h2>Light Intensity</h2>
-                <h3>1000 cd</h3>
+                <h3 id="light-status">1000</h3><h3>cd</h3>
             </div>
         </div>
         <hr>
