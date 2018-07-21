@@ -34,7 +34,7 @@
     justify-content: center;
 }
 .cb{
-    border-bottom: solid 1px blueviolet;  
+    border-bottom: solid 6px green;  
 }
 .nm{
 display: block; 
@@ -51,8 +51,8 @@ justify-content: center;
     background-image: url("http://kennedy-rs.com/wp-content/uploads/2017/11/bathroom-suite-ideas-2.jpg")
 }
 .a{ 
-  -webkit-text-stroke-color:black;
-    -webkit-text-stroke-width: 1.80px;   
+  -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;   
 }
 .b{
     font-size: 130px;

@@ -1,6 +1,10 @@
 
 $(function () {
     //Get box status if it empty or not
+    var secs = 0;
+    var mins = 0;
+    var hours = 0;
+
     setInterval(function () {
         $.ajax({
             type: "GET",
@@ -8,12 +12,31 @@ $(function () {
             dataType: "text",
             success: function (response) {
                 console.log(response)
-                if (response == 1){
-                    console.log('in')
-                    $("#boxstatus").html('<span class="badge badge-success">Empty</span>')}
+                if (response == 1) {
+                    $("#time").html(`<div> 0 hrs 0 min 0 sec</div>`)
+                    $("#boxstatus").html('<span class="badge badge-success">Empty</span>')
+                    $("#box-img").html('<img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">')
+                }
                 else {
-                    console.log('out')
-                    $("#boxstatus").html('<span class="badge badge-danger">Full</span>')}
+                    $("#box-img").html('<img src="https://png.icons8.com/ios/100/000000/open-box-filled.png" style="margin-left: 210px">')
+                    $('#myModal').modal('show')
+
+                    secs++
+                    if (secs === 60) {
+                        mins++
+                        secs = 0
+                    }
+                    if (mins === 60) {
+                        hours++
+                        mins = 0
+                        secs = 0
+                    }
+                    $("#time").html(`<h4> ${hours} hrs ${mins} min ${secs} sec</h4>`)
+                    console.log(secs)
+                    $("#boxstatus").html('<span class="badge badge-danger">Full</span>')
+                    // if()
+                    // $("#box-img").html('<img src="https://png.icons8.com/ios/100/F31A03/open-box-filled.png">')
+                }
             }, timeout: 5000
             ,
             fail: function (response) {
@@ -21,9 +44,10 @@ $(function () {
             }
         });
 
+
         $.ajax({
             type: "GET",
-            url: "http://ecourse.cpe.ku.ac.th/exceed/api/pf-box-totaluse/view/",
+            url: "http://ecourse.cpe.ku.ac.th/exceed/api/pf-box-status/history/",
             dataType: "text",
             success: function (response) {
 
@@ -62,7 +86,6 @@ $(function () {
 //             }
 //         });
 //     })
-
 $(function () {
     var val;
     $('#test').on('click', function () {
@@ -82,4 +105,5 @@ $(function () {
         });
     })
 })
+
 

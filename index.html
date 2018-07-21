@@ -15,8 +15,26 @@
 </head>
 
 <body>
-    <h1>test</h1>
-    <button id="test">test on server</button>
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Emergency!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>User forgot his/her Valuable</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Okay</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="test">test timer</button> -->
     <div class="cb">
         <h4 class="image">PALM FACTORY
             <img src="https://png.icons8.com/metro/26/000000/palm-tree.png" style="margin-left: 5pt">
@@ -26,9 +44,10 @@
     <div class="bg">
         <div class="center">
             <div class="a b">
-                <label class="image" style="color: aliceblue">BATH-BOX</label>
+                <label class="image" style="color: rgb(48, 153, 71) " >SHOWER-BATH
+                </label>
             </div>
-            <h1 style="color: aliceblue" class="a c">Find comfort you deserve</h1>
+            <h1 style="color:aliceblue " class="a c">Find comfort you deserve</h1>
         </div>
         <br>
         <br>
@@ -38,41 +57,53 @@
         <hr>
         <br>
         <div class='row'>
-            <div class="col-lg-6 ">
-                <div >
-                    <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px" id="box-img">
+            <div class="col-lg-6 border-right">
+                <div id="box-img">
+                    <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
                 </div>
-                <br>
-                <br>
-                <h4 style="margin-left: 186px">Box No.1</h4>
+                <h4 style="margin-left: 210px">Box No.1</h4>
                 <br>
 
-                <h4 style="margin-left: 186px">Usage times:</h4>
+                <h4 style="margin-left: 186px">Usage time:
+                    <span id="time">
+                        <div></div>/span></h4>
                 <br>
                 <div class="flex">
                     <h4 style="margin: 15px">Status: </h4>
                     <h2 id="boxstatus">
-                        <span class="badge badge-success" >Empty</span>
+                        <span class="badge badge-success">Empty</span>
                     </h2>
+                </div>
+                <div class="flex">
+                    <h4 style="margin: 15px;
+                justify-content: center;">Usable: </h4>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Enable" data-off="disabled" data-onstyle="success" data-offstyle="danger">
                 </div>
 
 
 
             </div>
             <div class="col-lg-6 ">
-                <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
-                <br>
-                <br>
-                <h4 style="margin-left: 186px">Box No.2</h4>
+                <div id="box-img2">
+                    <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
+                </div>
+                <h4 style="margin-left: 210px">Box No.2</h4>
                 <br>
 
-                <h4 style="margin-left: 186px">Usage times:</h4>
+                <h4 style="margin-left: 186px">Usage time:
+                    <div> 0 hrs 0 min 0 sec</div>
+                </h4>
                 <br>
                 <div class="flex">
                     <h4 style="margin: 15px">Status: </h4>
-                    <h2 >
+                    <h2>
                         <span class="badge badge-success">Empty</span>
                     </h2>
+                </div>
+                <div class="flex">
+                    <h4 style="margin: 15px;
+                    justify-content: center;">Usable: </h4>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Enable" data-off="disabled" data-onstyle="success" data-offstyle="danger">
                 </div>
 
 
@@ -80,44 +111,59 @@
             </div>
         </div>
         <br>
-        <br>
+        <hr>
+
         <br>
         <div class="row">
             <hr>
-            <div class="col-lg-6">
-                <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
+            <div class="col-lg-6 border-right">
+                <div id="box-img3">
+                    <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
+                </div>
+                <h4 style="margin-left: 210px">Box No.3</h4>
                 <br>
-                <br>
-                <h4 style="margin-left: 186px">Box No.3</h4>
-                <br>
-                <h4 style="margin-left: 186px">Usage times:</h4>
+                <h4 style="margin-left: 186px">Usage time:
+                    <div> 0 hrs 0 min 0 sec</div>
+                </h4>
                 <br>
 
                 <div class="flex">
                     <h4 style="margin: 15px">Status: </h4>
-                    <h2 >
+                    <h2>
                         <span class="badge badge-success">Empty</span>
                     </h2>
+                </div>
+                <div class="flex">
+                    <h4 style="margin: 15px;
+                    justify-content: center;">Usable: </h4>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Enable" data-off="disabled" data-onstyle="success" data-offstyle="danger">
                 </div>
 
 
 
             </div>
             <div class="col-lg-6">
-                <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
+                <div id="box-img4">
+                    <img src="https://png.icons8.com/ios/100/000000/empty-box-filled.png" style="margin-left: 210px">
+                </div>
+                <h4 style="margin-left: 210px">Box No.4</h4>
                 <br>
-                <br>
-                <h4 style="margin-left: 186px">Box No.4</h4>
-                <br>
-                <h4 style="margin-left: 186px">Usage times:</h4>
+                <h4 style="margin-left: 186px">Usage time:
+                    <div> 0 hrs 0 min 0 sec</div>
+                </h4>
                 <br>
 
                 <div class="flex">
                     <h4 style="margin: 15px">Status: </h4>
-                    <h2 >
+                    <h2>
                         <span class="badge badge-success">Empty</span>
                     </h2>
 
+                </div>
+                <div class="flex">
+                    <h4 style="margin: 15px;
+                        justify-content: center;">Usable: </h4>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Enable" data-off="disabled" data-onstyle="success" data-offstyle="danger">
                 </div>
 
 
