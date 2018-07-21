@@ -9,12 +9,16 @@
     background-color: white;
     border: thin rgba(0, 0, 0, .25) solid;
 }
-
 .page {
     height: 600px;
     margin: auto;
     overflow: auto;
     background-color: red
+}
+.center{
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 .long{
     width: 600px;
@@ -25,29 +29,33 @@
 .image2{
     padding: 80px
 }
+.cen{
+    align-items: center; 
+    justify-content: center;
+}
 .cb{
     border-bottom: solid 1px blueviolet;  
 }
 .nm{
-display: flex;
+display: block; 
+align-items: center;
+justify-content: center;
+}
+.flex{
+    display: flex; 
 align-items: center;
 justify-content: center;
 }
 
 .bg {
-    background-image: url("./pictures/BgHome.jpg");
+    background-image: url("http://kennedy-rs.com/wp-content/uploads/2017/11/bathroom-suite-ideas-2.jpg")
 }
-
-.center {
-    padding: 130px; 
-}
-.a{
-   
-    -webkit-text-stroke-color:black;
-    -webkit-text-stroke-width: 1.50px;   
+.a{ 
+  -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 1.80px;   
 }
 .b{
-    font-size: 115px;
+    font-size: 130px;
 }
 .c{
     font-size: 55px;
